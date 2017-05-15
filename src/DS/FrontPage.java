@@ -5,6 +5,9 @@
  */
 package DS;
 
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author hp
@@ -54,6 +57,7 @@ public class FrontPage extends javax.swing.JFrame {
 
         jLabel7.setText("5.Exit");
 
+        jTextField1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
@@ -88,7 +92,7 @@ public class FrontPage extends javax.swing.JFrame {
                     .addComponent(jLabel3)
                     .addComponent(jLabel2)
                     .addComponent(jLabel1)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(77, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -122,27 +126,39 @@ public class FrontPage extends javax.swing.JFrame {
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
+        
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         String num= jTextField1.getText();
+        two info = new two();
+        three info1= new three();
+        Four info2=new Four();
+        Five info3=new Five();
+        
+        
         
         if(num.equals("1")){//add
             
+         JFrame frame = new JFrame("InputDialog Example #1");
+
+        JOptionPane.showInputDialog(frame, " Name?");
+        info.setVisible(true);
+           
         }
         
          if(num.equals("2")){//search
-            
+             info1.setVisible(true);
         }
         else  if(num.equals("3")){//delete
-            
+             info2.setVisible(true);
         }
         else   if(num.equals("4")){//show all
-            
+             info3.setVisible(true);
         }
         else    if(num.equals("5")){//exit
-            
+             info.setVisible(true);
         }
          else{//invalid number
              

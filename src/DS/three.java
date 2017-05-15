@@ -41,8 +41,6 @@ public class three extends javax.swing.JFrame {
 
         jLabel2.setText("Enter name:");
 
-        jTextField1.setText("jTextField1");
-
         jButton1.setText("OK");
 
         jButton2.setText("Cancel");
